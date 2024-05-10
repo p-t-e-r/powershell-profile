@@ -23,7 +23,7 @@ function Update-Profile {
     }
 
     try {
-        $url = "https://raw.githubusercontent.com/ChrisTitusTech/powershell-profile/main/Microsoft.PowerShell_profile.ps1"
+        $url = "https://raw.githubusercontent.com/p-t-e-r/powershell-profile/main/Microsoft.PowerShell_profile.ps1"
         $oldhash = Get-FileHash $PROFILE
         Invoke-RestMethod $url -OutFile "$env:temp/Microsoft.PowerShell_profile.ps1"
         $newhash = Get-FileHash "$env:temp/Microsoft.PowerShell_profile.ps1"
@@ -205,7 +205,14 @@ function mkcd { param($dir) mkdir $dir -Force; Set-Location $dir }
 # Navigation Shortcuts
 function docs { Set-Location -Path $HOME\Documents }
 
+function ndocs { Set-Location -Path "$HOME\OneDrive - Nord universitet\Dokumenter" }
+
 function dtop { Set-Location -Path $HOME\Desktop }
+
+function ndtop { Set-Location -Path "$HOME\OneDrive - Nord universitet\Skrivebord" }
+
+function npriv { Set-Location -Path $HOME\OneDrive }
+
 
 # Quick Access to Editing the Profile
 function ep { vim $PROFILE }
@@ -241,8 +248,14 @@ function lazyg {
 # Quick Access to System Information
 function sysinfo { Get-ComputerInfo }
 
+function status { neofetch }
+
 # Networking Utilities
 function flushdns { Clear-DnsClientCache }
+
+function network { ncpa.cpl }
+
+function rdp { mstsc }
 
 # Clipboard Utilities
 function cpy { Set-Clipboard $args[0] }
