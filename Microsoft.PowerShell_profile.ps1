@@ -253,6 +253,8 @@ function status { neofetch }
 # Networking Utilities
 function flushdns { Clear-DnsClientCache }
 
+function ip { ipconfig /all }
+
 function network { ncpa.cpl }
 
 function rdp { mstsc }
