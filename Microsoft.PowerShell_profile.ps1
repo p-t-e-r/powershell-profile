@@ -248,7 +248,7 @@ function lazyg {
 # Quick Access to System Information
 function sysinfo { Get-ComputerInfo }
 
-function status { neofetch }
+function status { fastfetch }
 
 # Networking Utilities
 function flushdns { Clear-DnsClientCache }
