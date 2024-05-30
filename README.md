@@ -19,7 +19,9 @@ After running the script, you'll find a downloaded `cove.zip` file in the folder
 
 ## For full experience install FastFetch
 
-1. winget install fastfetch
-
+1. Execute following command in Terminal:
+```
+winget install fastfetch
+```
 
 Now, enjoy your enhanced and stylish PowerShell experience! 🚀
