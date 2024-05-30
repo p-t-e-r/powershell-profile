@@ -17,4 +17,9 @@ After running the script, you'll find a downloaded `cove.zip` file in the folder
 1. Extract the `cove.zip` file.
 2. Locate and install the nerd fonts.
 
+## For full experience install FastFetch
+
+1. winget install fastfetch
+
+
 Now, enjoy your enhanced and stylish PowerShell experience! 🚀
