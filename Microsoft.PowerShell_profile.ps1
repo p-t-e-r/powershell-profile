@@ -248,7 +248,7 @@ function lazyg {
 # Quick Access to System Information
 function sysinfo { Get-ComputerInfo }
 
-function status { fastfetch }
+function status { fastfetch -c archey.jsonc }
 
 # Networking Utilities
 function flushdns { Clear-DnsClientCache }
