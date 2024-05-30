@@ -1,4 +1,4 @@
-# 🎨 PowerShell Profile (Pretty PowerShell)
+# 🎨 My PowerShell Profile
 
 A stylish and functional PowerShell profile that looks and feels almost as good as a Linux terminal.
 
