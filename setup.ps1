@@ -124,3 +124,9 @@ try {
 catch {
     Write-Error "Failed to install zoxide. Error: $_"
 }
+
+# Install Fastfetch
+try {
+    winget install -e --id Fastfetch-cli.Fastfetch
+    Write-Host "Fastfetch installed successfully."
+}
