@@ -130,3 +130,6 @@ try {
     winget install -e --id Fastfetch-cli.Fastfetch
     Write-Host "Fastfetch installed successfully."
 }
+catch {
+    Write-Error "Failed to install Fastfetch. Error: $_"
+}
